@@ -62,7 +62,8 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="CXF-hp-6It" firstAttribute="leading" secondItem="44p-V3-z8j" secondAttribute="trailing" constant="14" id="5Jd-m7-Qhx"/>
-                                        <constraint firstItem="HtN-oO-PbB" firstAttribute="top" secondItem="CXF-hp-6It" secondAttribute="bottom" priority="250" constant="25.5" id="J9k-Fu-wAp"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="44p-V3-z8j" secondAttribute="bottom" constant="19" id="AbH-Ho-CvG"/>
+                                        <constraint firstItem="HtN-oO-PbB" firstAttribute="top" secondItem="CXF-hp-6It" secondAttribute="bottom" priority="250" constant="6" id="J9k-Fu-wAp"/>
                                         <constraint firstItem="HtN-oO-PbB" firstAttribute="leading" secondItem="44p-V3-z8j" secondAttribute="trailing" constant="14" id="JPe-g9-Mw2"/>
                                         <constraint firstItem="CXF-hp-6It" firstAttribute="top" secondItem="Ylu-8P-uHC" secondAttribute="bottom" constant="6" id="MXc-p2-Z0B"/>
                                         <constraint firstAttribute="trailing" secondItem="HtN-oO-PbB" secondAttribute="trailing" constant="10" id="PJY-zK-qmA"/>
