@@ -12,6 +12,7 @@
 		07780D521E6D860E00BC3630 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07780D501E6D860E00BC3630 /* Main.storyboard */; };
 		07780D541E6D860E00BC3630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07780D531E6D860E00BC3630 /* Assets.xcassets */; };
 		07780D571E6D860E00BC3630 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07780D551E6D860E00BC3630 /* LaunchScreen.storyboard */; };
+		AC1809EB1F5E3234006B1809 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1809EA1F5E3234006B1809 /* MovieTableViewCell.swift */; };
 		ACDCAD981F5E0E0400B1DA05 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = ACDCAD971F5E0E0400B1DA05 /* movies.json */; };
 		ACDCAD9A1F5E0E6700B1DA05 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDCAD991F5E0E6700B1DA05 /* Movie.swift */; };
 		ACDCADB61F5E104300B1DA05 /* arrival-small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACDCAD9C1F5E104300B1DA05 /* arrival-small.jpg */; };
@@ -51,6 +52,7 @@
 		07780D531E6D860E00BC3630 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07780D561E6D860E00BC3630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07780D581E6D860E00BC3630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC1809EA1F5E3234006B1809 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		ACDCAD971F5E0E0400B1DA05 /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
 		ACDCAD991F5E0E6700B1DA05 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		ACDCAD9C1F5E104300B1DA05 /* arrival-small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "arrival-small.jpg"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				07780D551E6D860E00BC3630 /* LaunchScreen.storyboard */,
 				07780D581E6D860E00BC3630 /* Info.plist */,
 				ACDCAD991F5E0E6700B1DA05 /* Movie.swift */,
+				AC1809EA1F5E3234006B1809 /* MovieTableViewCell.swift */,
 			);
 			path = MoviesLib;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC1809EB1F5E3234006B1809 /* MovieTableViewCell.swift in Sources */,
 				07780D4F1E6D860E00BC3630 /* MovieViewController.swift in Sources */,
 				ACFCD28A1F5E0BA900FAFF63 /* MoviewsTableViewController.swift in Sources */,
 				ACDCAD9A1F5E0E6700B1DA05 /* Movie.swift in Sources */,

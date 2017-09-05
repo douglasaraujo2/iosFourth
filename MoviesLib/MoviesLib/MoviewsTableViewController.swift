@@ -15,6 +15,8 @@ class MoviewsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.estimatedRowHeight = 106
+        tableView.rowHeight = UITableViewAutomaticDimension
         loadLocalJSON()
     }
     func loadLocalJSON(){
@@ -43,6 +45,10 @@ class MoviewsTableViewController: UITableViewController {
         
         
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! MovieViewController
+        vc.movie = movies[tableView.indexPathForSelectedRow!.row]
+    }
     
     
     // MARK: - Table view data source
@@ -54,17 +60,17 @@ class MoviewsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! MovieTableViewCell
         
-        cell.textLabel?.text = movies[indexPath.row].title
-        cell.detailTextLabel?.text = "⭐️ \(movies[indexPath.row].rating)/10"
-        
-        // Configure the cell...
+        cell.ivPoster.image = UIImage(named: movies[indexPath.row].imageSmall)
+        cell.lbTitle.text = movies[indexPath.row].title
+        cell.lbSummary.text = movies[indexPath.row].sumary
+        cell.lbRating.text = "⭐️ \(movies[indexPath.row].rating)/10"
 
         return cell
     }
  
-
+ 
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

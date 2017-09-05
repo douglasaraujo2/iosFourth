@@ -19,10 +19,21 @@ class MovieViewController: UIViewController {
     @IBOutlet weak var tvSinopsis: UITextView!
     @IBOutlet weak var lcButtonX: NSLayoutConstraint!
     
+    //MARK: - Properties
+    var movie : Movie!
     
     // MARK: Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        ivPoster.image = UIImage(named: movie.imageWide)
+        lbTitle.text = movie.title
+        lbGenre.text = movie.categoriesDescription
+        lbDuration.text = movie.duration
+        lbScore.text = "⭐️ \(movie.rating)/10"
+        tvSinopsis.text = movie.sumary
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        dismiss(animated: true, completion: nil)
     }
     
 }
